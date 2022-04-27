@@ -3,7 +3,9 @@ body{
     /*padding-top: 1.5%;*/
 	color:#b8bbcd;
     /*background:#aaa;*/
-	background-image: url("C:/Users/Saniya/Desktop/Quiz application/Quiz_Application/images/login.webp");
+	background-image: url("https://cdn.wallpapersafari.com/51/44/sSa5Nz.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	/*background-image: url(https://www.freepik.com/free-vector/flat-geometric-background_14456042.htm#query=quiz%20background&position=24&from_view=keyword);*/
 	font:600 16px/18px 'Open Sans',sans-serif;
     height: 100%;
