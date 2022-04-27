@@ -30,19 +30,21 @@ a{color:inherit;text-decoration:none}
 h2{
 	color: black;
 	position: absolute;
-	background-color: rgb(223, 213, 213);
 	margin-left: 100px;
-	top: 125px;
+	top: 100px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 30px;
+	font-style:inherit;
+	font: bold;
 }
 .text-block{
 	position: absolute;
 	background-color: rgb(223, 213, 213);
+	border-radius: 20px;
 	margin-right: 50%;
 	margin-left: 125px;
-	top: 200px;
+	top: 175px;
 	bottom: 50px;
 	color: black;
 	padding-left: 20px;
