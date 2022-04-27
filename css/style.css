@@ -13,7 +13,7 @@ body{
     color: #fff;
     background: #8133FF;
 }
-.start_btn,
+/*.start_btn,*/
 .info_box,
 .quiz_box,
 .result_box{
@@ -32,7 +32,7 @@ body{
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
-.start_btn button{
+/*.start_btn button{
     font-size: 25px;
     font-weight: 500;
     color: #8133FF;
@@ -42,7 +42,7 @@ body{
     border-radius: 5px;
     background: #fff;
     cursor: pointer;
-}
+}*/
 .info_box{
     width: 540px;
     background: #fff;
