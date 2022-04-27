@@ -17,6 +17,7 @@ info_box.classList.add("activeInfo");
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
+    window.open('home.html','_self');
 }
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
