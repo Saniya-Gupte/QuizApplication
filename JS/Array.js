@@ -19,7 +19,7 @@ let questions = [
     options: [
       "lower bound.",
       "range.",
-      "upper bound",
+      "upper bound.",
       "All of these."
     ]
   },
@@ -37,12 +37,12 @@ let questions = [
     {
     numb: 4,
     question: "Let A[1...n] be an array of n distinct numbers. If i < j and A[i] > A[j], then the pair (i, j) is called an inversion of A. What is the expected number of inversions in any permutation on n elements ?",
-    answer: "θ(n2)",
+    answer: "θ(n^2)",
     options: [
       "θ(n)",
-      "θ(lgn",
-      "θ(nlgn)",
-      "θ(n2)"
+      "θ(log(n))",
+      "θ(nlog(n))",
+      "θ(n^2)"
     ]
   },
     {
@@ -64,7 +64,7 @@ let questions = [
     options: [
       "lower bound.",
       "upper bound.",
-      "range",
+      "range.",
       "extraction."
     ]
   },
