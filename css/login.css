@@ -40,10 +40,10 @@ h2{
 }
 .text-block{
 	position: absolute;
-	background-color: rgb(236, 222, 222);
+	background-color: rgb(225, 225, 225);
 	border-radius: 20px;
 	margin-right: 50%;
-	margin-left: 125px;
+	margin-left: 100px;
 	top: 175px;
 	bottom: 50px;
 	color: black;
@@ -64,7 +64,7 @@ h2{
 }
 .forget-wrap{
 	width:100%;
-	margin-left: 60%;
+	margin: auto;
     max-width:525px;
 	min-height:670px;
 	position:relative;
@@ -159,8 +159,8 @@ h2{
 }
 .login-form .group .label,
 .fp-form .group .label{
-	color:#aaa;
-	font-size:12px;
+	color:rgb(224, 224, 224);
+	font-size:14px;
 }
 .login-form .group .button,
 .fp-form .group .button{
@@ -217,7 +217,7 @@ h2{
 .hr{
 	height:2px;
 	margin:60px 0 50px 0;
-	background:rgba(255,255,255,.2);
+	background:rgba(227, 225, 225, 0.2);
 }
 .foot-lnk{
 	text-align:center;
@@ -230,4 +230,8 @@ h2{
 .foot-lnk1{
 	padding: 10px;
 	text-align:center;
+}
+
+#forgot{
+	color: #fff;
 }
