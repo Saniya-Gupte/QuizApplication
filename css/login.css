@@ -30,7 +30,7 @@ a{color:inherit;text-decoration:none}
 h2{
 	color: black;
 	position: absolute;
-	background-color: rgba(223, 213, 213, 0);
+	background-color: rgb(223, 213, 213);
 	margin-left: 100px;
 	top: 125px;
 	padding-left: 20px;
@@ -39,7 +39,7 @@ h2{
 }
 .text-block{
 	position: absolute;
-	background-color: rgba(223, 213, 213, 0);
+	background-color: rgb(223, 213, 213);
 	margin-right: 50%;
 	margin-left: 125px;
 	top: 200px;
