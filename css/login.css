@@ -27,6 +27,30 @@ a{color:inherit;text-decoration:none}
 	width: 200px;
 	height: 100vh;
 }*/
+h2{
+	color: black;
+	position: absolute;
+	background-color: rgba(223, 213, 213, 0);
+	margin-left: 100px;
+	top: 125px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 30px;
+}
+.text-block{
+	position: absolute;
+	background-color: rgba(223, 213, 213, 0);
+	margin-right: 50%;
+	margin-left: 125px;
+	top: 200px;
+	bottom: 50px;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	font-size: 20px;
+}
+
 
 .login-wrap{
 	width:40%;
