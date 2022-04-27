@@ -9,7 +9,6 @@ let questions = [
       "Container of objects of similar types",
       "Container of objects of mixed types",
       "All of the mentioned"
-
     ]
   },
     {
@@ -19,7 +18,7 @@ let questions = [
     options: [
       "lower bound.",
       "range.",
-      "upper bound",
+      "upper bound.",
       "All of these."
     ]
   },
