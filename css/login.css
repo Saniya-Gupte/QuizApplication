@@ -40,13 +40,13 @@ h2{
 }
 .text-block{
 	position: absolute;
-	background-color: rgba(85, 59, 99, 0.9);
+	background-color: rgb(236, 222, 222);
 	border-radius: 20px;
 	margin-right: 50%;
 	margin-left: 125px;
 	top: 175px;
 	bottom: 50px;
-	color: whitesmoke;
+	color: black;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 18px;
