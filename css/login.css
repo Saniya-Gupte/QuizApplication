@@ -1,8 +1,9 @@
 body{
 	margin:0;
-    padding-top: 1.5%;
+    /*padding-top: 1.5%;*/
 	color:#b8bbcd;
     background:#aaa;
+	/*background-image: url(https://www.freepik.com/free-vector/flat-geometric-background_14456042.htm#query=quiz%20background&position=24&from_view=keyword);*/
 	font:600 16px/18px 'Open Sans',sans-serif;
     height: 100%;
 }
