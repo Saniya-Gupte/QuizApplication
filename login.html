@@ -13,20 +13,21 @@
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
             <div class="login-form">
                 <div class="sign-in-htm">
+                    <br>
                     <div class="group">
-                        <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
+                        <label for="email" class="label">Email Address</label>
+                        <input id="login_email" type="text" class="input">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
+                        <label for="password" class="label">Password</label>
+                        <input id="login_password" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
                         <input id="check" type="checkbox" class="check" checked>
                         <label for="check"><span class="icon"></span> Keep me Signed in</label>
                     </div>
                     <div class="group">
-                        <input type="submit" class="button" value="Sign In">
+                        <input type="submit" id="login" class="button" value="Sign In">
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
@@ -38,24 +39,25 @@
 
                 </div>
                 <div class="sign-up-htm">
+                    <br>
                     <div class="group">
-                        <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
+                        <label for="username" class="label">Username</label>
+                        <input id="username" type="text" class="input">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Email Address</label>
-                        <input id="pass" type="text" class="input">
+                        <label for="email" class="label">Email Address</label>
+                        <input id="email" type="text" class="input">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
+                        <label for="password" class="label">Password</label>
+                        <input id="password" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Confirm Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
+                        <label for="password" class="label">Confirm Password</label>
+                        <input id="password" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
-                        <input type="submit" class="button" value="Sign Up">
+                        <input type="submit" id="signUp" class="button" value="Sign Up">
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
@@ -65,5 +67,79 @@
             </div>
         </div>
     </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCceBjRQyxV2UDD7cloEVF02PitPL6dZA8",
+          authDomain: "authentication-for-webpage.firebaseapp.com",
+          databaseURL: "https://authentication-for-webpage-default-rtdb.firebaseio.com",
+          projectId: "authentication-for-webpage",
+          storageBucket: "authentication-for-webpage.appspot.com",
+          messagingSenderId: "153416431417",
+          appId: "1:153416431417:web:72a827d1afab83545b9ae8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+
+    signUp.addEventListener('click',(e) => {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var username = document.getElementById('username').value;
+
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+        // Signed in 
+            const user = userCredential.user;
+            set(ref(database, 'users/' + user.uid),{
+                username: username,
+                email: email
+            })
+            alert('New User Created!');
+            window.location = "home.html";
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+
+            alert(errorMessage);
+        });
+    });
+
+    login.addEventListener('click',(e)=>{
+        var email = document.getElementById('login_email').value;
+        var password = document.getElementById('login_password').value;
+
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+
+            const dt = new Date();
+            update(ref(database, 'users/' + user.uid),{
+            last_login: dt,
+            })
+
+            alert('User Logged In!');
+            window.location = "home.html";
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+
+            alert(errorMessage);
+        });
+    });
+    </script>
 </body>
 </html>
