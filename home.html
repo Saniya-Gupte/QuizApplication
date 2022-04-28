@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="header">
-    <a class="logout-button" href="index.html">Logout</a>
+    <a id="logout" class="logout-button" href="index.html">Logout</a>
     <!--Content before waves-->
     <div class="inner-header flex">
       
@@ -24,10 +24,10 @@
     <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
     </defs>
     <g class="parallax">
-    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(189, 181, 213,0.7)" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(189, 181, 213,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(189, 181, 213,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(189, 181, 213)" />
     </g>
     </svg>
     </div>
@@ -94,6 +94,45 @@
             </div>
           </div>
       </main>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCceBjRQyxV2UDD7cloEVF02PitPL6dZA8",
+          authDomain: "authentication-for-webpage.firebaseapp.com",
+          databaseURL: "https://authentication-for-webpage-default-rtdb.firebaseio.com",
+          projectId: "authentication-for-webpage",
+          storageBucket: "authentication-for-webpage.appspot.com",
+          messagingSenderId: "153416431417",
+          appId: "1:153416431417:web:72a827d1afab83545b9ae8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+
+        logout.addEventListener('click',(e)=>{
+        signOut(auth).then(() => {
+          // Sign-out successful.
+          alert('User logged out!');
+        }).catch((error) => {
+          // An error happened.
+          const errorCode = error.code;
+          const errorMessage = error.message;
+
+            alert(errorMessage);
+        });
+        });
+
+    </script>
 </body>
 
 </html>
