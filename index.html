@@ -111,7 +111,7 @@
         const database = getDatabase(app);
         const auth = getAuth();
 
-        var email_verified = false;
+        // var email_verified = false;
     signUp.addEventListener('click',(e) => {
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
@@ -134,21 +134,19 @@
             alert(errorMessage);
         });
             
-            email_verified= user.emailVerified;
             set(ref(database, 'users/' + user.uid),{
                 username: username,
                 email: email,
-                everify: email_verified
             })
             setTimeout(function() {alert('New User Created! verify mail and try signing in');
             
+            window.location = "index.html";
         },2000 );
-        if(email_verified){
+        // if(email_verified){
 
                 
-            alert('New User Created!');
-             window.location = "home.html"; 
-        }
+        //     alert('New User Created!'); 
+        // }
 
         })
         .catch((error) => {
@@ -157,6 +155,7 @@
 
             alert(errorMessage);
         });
+        
     });
 
     login.addEventListener('click',(e)=>{
@@ -171,9 +170,17 @@
             const dt = new Date();
             update(ref(database, 'users/' + user.uid),{
             last_login: dt,
+            
             })
+            if(user.emailVerified){
+
+                
             alert('User Logged In!');
             setTimeout(function() { window.location = "home.html"; }, 1500);
+            }
+            else{
+                window.alert("Please verify your Email first");
+            }
           
             
         })
