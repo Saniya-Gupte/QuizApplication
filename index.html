@@ -87,7 +87,7 @@
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
         import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
       
@@ -158,18 +158,6 @@
         });
     });
 
-    const user = auth.currentUser;
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            // User is signed in
-            // https://firebase.google.com/docs/reference/js/firebase.User
-            const uid = user.uid;
-            window.location = "home.html";
-        } else {
-            // User is signed out
-            window.location="index.html";
-        }
-});
     </script>
 </body>
 </html>
