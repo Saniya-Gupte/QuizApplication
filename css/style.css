@@ -7,11 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #c29ffa;
+    background: #1b0b35;
 }
 ::selection{
     color: #fff;
-    background: #8133FF;
+    background: #31224d;
 }
 /*.start_btn,*/
 .info_box,
@@ -72,7 +72,7 @@ body{
 }
 .info_box .info-list .info span{
     font-weight: 600;
-    color: #8133FF;
+    color: #31224d;
 }
 .info_box .buttons{
     height: 60px;
@@ -92,7 +92,7 @@ body{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #8133FF;
+    border: 1px solid #31224d;
     transition: all 0.3s ease;
 }
 .quiz_box{
@@ -121,7 +121,7 @@ body{
     font-weight: 600;
 }
 .quiz_box header .timer{
-    color: #4F1F9E;
+    color: #31224d;
     background: #f0ddfc;
     border: 1px solid #80728a;
     height: 45px;
@@ -155,7 +155,7 @@ body{
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #8133FF;
+    background: #31224d;
 }
 section{
     padding: 25px 30px 20px 30px;
@@ -253,7 +253,7 @@ footer button{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    background: #8133FF;
+    background: #31224d;
     border: 1px solid #8133FF;
     line-height: 10px;
     opacity: 0;
@@ -285,7 +285,7 @@ footer button.show{
 }
 .result_box .icon{
     font-size: 100px;
-    color: #8133FF;
+    color: #31224d;
     margin-bottom: 10px;
 }
 .result_box .complete_text{
@@ -321,14 +321,14 @@ footer button.show{
 }
 .buttons button.restart{
     color: #fff;
-    background: #8133FF;
+    background: #31224d;
 }
 .buttons button.restart:hover{
     background: #B081FC;
 }
 .buttons button.quit{
     color: #fff;
-    background: #8133FF;
+    background: #31224d;
 }
 .buttons button.quit:hover{
     background: #B081FC;

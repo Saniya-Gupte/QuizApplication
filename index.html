@@ -72,10 +72,6 @@
                         <input id="password" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
-                        <label for="password" class="label">Confirm Password</label>
-                        <input id="password" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
                         <input type="submit" id="signUp" class="button" value="Sign Up">
                     </div>
                     <div class="hr"></div>
@@ -124,8 +120,10 @@
                 username: username,
                 email: email
             })
+            
             alert('New User Created!');
-            window.location = "home.html";
+            setTimeout(function() { window.location = "home.html"; }, 1500);
+
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -150,7 +148,7 @@
             })
 
             alert('User Logged In!');
-            window.location = "home.html";
+            setTimeout(function() { window.location = "home.html"; }, 1500);
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -159,6 +157,19 @@
             alert(errorMessage);
         });
     });
+
+    const user = auth.currentUser;
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            // User is signed in
+            // https://firebase.google.com/docs/reference/js/firebase.User
+            const uid = user.uid;
+            window.location = "home.html";
+        } else {
+            // User is signed out
+            window.location="index.html";
+        }
+});
     </script>
 </body>
 </html>
