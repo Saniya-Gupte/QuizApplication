@@ -72,10 +72,6 @@
                         <input id="password" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
-                        <label for="password" class="label">Confirm Password</label>
-                        <input id="password" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
                         <input type="submit" id="signUp" class="button" value="Sign Up">
                     </div>
                     <div class="hr"></div>
@@ -126,7 +122,7 @@
             })
             
             alert('New User Created!');
-            setTimeout(function() { window.location = "home.html"; }, 1000);
+            setTimeout(function() { window.location = "home.html"; }, 1500);
 
         })
         .catch((error) => {
@@ -152,7 +148,7 @@
             })
 
             alert('User Logged In!');
-            setTimeout(function() { window.location = "home.html"; }, 1000);
+            setTimeout(function() { window.location = "home.html"; }, 1500);
         })
         .catch((error) => {
             const errorCode = error.code;
