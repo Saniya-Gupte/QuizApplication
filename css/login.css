@@ -3,7 +3,7 @@ body{
     /*padding-top: 1.5%;*/
 	color:#b8bbcd;
     /*background:#aaa;*/
-	background-image: url("https://cdn.wallpapersafari.com/51/44/sSa5Nz.jpg");
+	background-image: url("https://image.shutterstock.com/image-illustration/blue-purple-gradient-neon-light-260nw-1690122226.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-image: url(https://www.freepik.com/free-vector/flat-geometric-background_14456042.htm#query=quiz%20background&position=24&from_view=keyword);*/
@@ -28,7 +28,7 @@ a{color:inherit;text-decoration:none}
 	height: 100vh;
 }*/
 h2{
-	color: black;
+	color: rgb(255, 255, 255);
 	position: absolute;
 	margin-left: 100px;
 	top: 100px;
@@ -40,13 +40,13 @@ h2{
 }
 .text-block{
 	position: absolute;
-	background-color: rgb(225, 225, 225);
+	background-color: rgb(225, 225, 225,0);
 	border-radius: 20px;
 	margin-right: 50%;
 	margin-left: 100px;
 	top: 175px;
 	bottom: 50px;
-	color: black;
+	color: rgb(211, 171, 213);
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 18px;
@@ -65,6 +65,7 @@ h2{
 .forget-wrap{
 	width:100%;
 	margin: auto;
+	margin-top: 25px;
     max-width:525px;
 	min-height:670px;
 	position:relative;
@@ -77,7 +78,7 @@ h2{
 	height:670px;
 	position:absolute;
     padding:90px 70px 50px 70px;
-	background:rgba(73, 35, 94, 0.9);
+	background:rgba(73, 35, 94, 0.7);
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
@@ -217,16 +218,13 @@ h2{
 .hr{
 	height:2px;
 	margin:60px 0 50px 0;
-	background:rgba(227, 225, 225, 0.2);
+	background:rgba(255, 255, 255, 0.4);
 }
 .foot-lnk{
 	text-align:center;
+	color: #fff;
 }
-.hr1{
-	height:2px;
-	margin:60px 0 50px 0;
-	background:rgba(255,255,255,.2);
-}
+
 .foot-lnk1{
 	padding: 10px;
 	text-align:center;

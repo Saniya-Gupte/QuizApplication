@@ -17,17 +17,15 @@ html, body {
 body {
   display: grid;
   place-items: center;
-  background-color: white;
+  background-color: #1b0b35;
 }
 
 h1{
-  color: black;
+  color: rgb(252, 246, 246);
   font-family: serif;
 }
 
-h2{
-  color: black;
-}
+
 
 .page-content {
   display: grid;
@@ -94,28 +92,28 @@ h2{
 }
 
 .card:nth-child(1):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .card:nth-child(2):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .card:nth-child(3):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .card:nth-child(4):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .card:nth-child(5):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .card:nth-child(6):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .card:nth-child(7):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .card:nth-child(8):before {
-  background-image: url(https://i.pinimg.com/originals/82/43/c4/8243c456b955082371091d4b88f57654.jpg);
+  background-image: url(http://www.designshock.com/wp-content/uploads/2014/08/16_thumb1.jpg);
 }
 .content {
   position: relative;
@@ -219,12 +217,12 @@ body {
   width: 100%;
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, #8133FF 0%, #EADCFE 100%);
+  background: linear-gradient(60deg, #1b0b35 0%, #745b95 100%);
   color:black;
 }
 
 .inner-header {
-  height:120px;
+  height:90px;
   width:100%;
   margin: 0;
   padding: 0;

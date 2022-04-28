@@ -124,8 +124,10 @@
                 username: username,
                 email: email
             })
+            
             alert('New User Created!');
-            window.location = "home.html";
+            setTimeout(function() { window.location = "home.html"; }, 1000);
+
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -150,7 +152,7 @@
             })
 
             alert('User Logged In!');
-            window.location = "home.html";
+            setTimeout(function() { window.location = "home.html"; }, 1000);
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -159,6 +161,19 @@
             alert(errorMessage);
         });
     });
+
+    const user = auth.currentUser;
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            // User is signed in
+            // https://firebase.google.com/docs/reference/js/firebase.User
+            const uid = user.uid;
+            window.location = "home.html";
+        } else {
+            // User is signed out
+            window.location="index.html";
+        }
+});
     </script>
 </body>
 </html>
