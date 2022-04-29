@@ -112,7 +112,7 @@
         const auth = getAuth();
 
         // var email_verified = false;
-    signUp.addEventListener('click',(e) => {
+        signUp.addEventListener('click',(e) => {
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
         var username = document.getElementById('username').value;
@@ -138,10 +138,9 @@
                 username: username,
                 email: email,
             })
-            setTimeout(function() {alert('New User Created! verify mail and try signing in');
-            
+            setTimeout(function() {alert('New User Created! Verify mail and try signing in');            
             window.location = "index.html";
-        },2000 );
+            },2000 );
         // if(email_verified){
 
                 
@@ -179,7 +178,7 @@
             setTimeout(function() { window.location = "home.html"; }, 1500);
             }
             else{
-                window.alert("Please verify your Email first");
+                window.alert("Please verify your Email first.");
             }
           
             
