@@ -52,6 +52,12 @@ h2{
 	font-size: 18px;
 }
 
+#takequiz{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+}
 
 .login-wrap{
 	width:40%;
