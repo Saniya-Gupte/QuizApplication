@@ -1,4 +1,17 @@
 # QuizApplication
+A DSA quiz application website
+
+## Team Members
+- Sayali Panch
+- Saniya Gupte
+- Aishwarya Jadhav
+- Sakshi Patil
+
+## Technologies used
+- HTML
+- CSS
+- Javascript
+- Firebase
 A quiz application website that challenges users to test their data structures and algorithms knowledge!
 
 ![dsa2](https://user-images.githubusercontent.com/93322767/189950645-c58ea7c6-ed67-4722-9097-f890d8b50c63.png)
